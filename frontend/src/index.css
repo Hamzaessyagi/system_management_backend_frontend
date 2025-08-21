@@ -1,0 +1,352 @@
+body{
+    font-family: Arial, sans-serif;
+
+
+}
+
+span{
+
+  cursor: pointer;
+ 
+}
+
+
+.layout {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2d2f38;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+   height: 90%;
+   overflow-y: auto;
+
+}
+.nav-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #2025a4af;
+  transition: 0.3s ease;
+}
+.logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+/*header*/
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.fir{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 12px;
+  width: 300px;
+  background-color: #fff;
+  color: #2E4258;
+  
+}
+
+.search i {
+  color: #2E4258;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+.role{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: white;
+    color:#2E4258 ;
+    cursor: pointer;
+
+}
+.rolee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    background-color:#2E4258 ;
+    color: white;
+    cursor: pointer;
+}
+
+/*secend page*/
+
+
+.table-container {
+  background-color: #f4f6fc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table thead {
+  background-color: #1d3557;
+  color: white;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/*  Checkbox styling */
+.user-table input {
+  width: 18px;
+  height: 18px;
+  accent-color: #0043bf; /* couleur de coche */
+  cursor: pointer;
+}
+
+/*  Badges status */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.badge.active {
+  background-color: #01ad2a87;
+  color: black;
+}
+
+.badge.inactive {
+  background-color: #ff0015a3;
+  color: black;
+}
+
+
+
+.badge.suspended {
+  background-color: #ffe0b3;
+  
+  color: rgb(0, 0, 0);
+}
+
+/*  Icons */
+.action {
+  cursor: pointer;
+  margin-right: 8px;
+  color: #1d3557;
+  font-size: 16px;
+}
+
+.action.delete {
+  color: #e63946;
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #1d3557;
+}
+.div2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #1d3557;
+}
+.dii{
+    background-color: white;
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 1px solid rgba(128, 128, 128, 0.496);
+    cursor: pointer;
+}
+
+.dii p{
+    margin: 0;
+}
+.button{
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.345);
+    cursor: pointer;
+}
+button:hover,
+.button:hover,
+.role:hover,
+.rolee:hover,
+.dii:hover {
+  background-color: #ddd;  
+  border-color: #999;      
+  color: #333;             
+  transition: 0.3s ease;   
+}
+
+/* Styles des boutons */
+
+
+/* Modale (fond flou) */
+.modal {
+ 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenu centré */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulaire */
+#userForm input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#userForm{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2d2f38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-filter-container {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown.hidden {
+  display: none;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f2f2f2;
+}
+
